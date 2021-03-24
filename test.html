@@ -3,11 +3,40 @@
 
   <head>
     <meta charset="utf-8">
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <title></title>
   </head>
 
   <body>
-    <h1>essai2 html</h1>
+    <a-assets>
+<img id="herbe" src="herbe.jpg">
+<img id="michou" src="michou.jpg">
+</a-assets>
+    <a-scene>
+      
+
+        <a-box geometry="primitive:  circle"
+              position="-1 2 -4"
+              rotation="0 45 0"
+              src="#michou"
+              color="#d8eaff"
+              </a-box>
+
+        <a-box geometry="primitive:  cylinder"
+        width="2" height="8" depth="2"
+        position="0 -1 -3"
+        rotation="0 45 0"
+        color="#aaaaff"
+        </a-box>
+<a-plane     position="0 -2 -6"
+              rotation="-90 0 0"
+              width="10" height="10"
+              src="#herbe"
+              color="#8b8a8b">
+
+  </a-plane>
+
+      </a-scene>
   </body>
 
 </html>
